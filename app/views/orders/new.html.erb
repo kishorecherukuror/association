@@ -1,0 +1,13 @@
+
+<%= form_for @order, url: {action: 'create'} do |f| %>
+
+	<p>Product: <%= f.text_field :product %></p>
+	<p>Quantity: <%= f.number_field :qunatity %> </p>
+	<p>Price: <%= f.number_field :price %></p>
+
+	<p><%= f.hidden_field :customer_id %></p>
+
+	<%= f.submit %>
+
+
+<% end %>
